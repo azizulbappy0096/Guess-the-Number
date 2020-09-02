@@ -92,7 +92,8 @@ const playGame = () => {
     measureResult(generatedNumber, input);
     if(guessedNum.length > 2) {
         classToggle();
-    }  
+    };
+    document.getElementById('number_guess').value = '';  
 };
 
 function resetGame() {
