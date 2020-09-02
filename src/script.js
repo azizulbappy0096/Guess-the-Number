@@ -66,9 +66,9 @@ function getHistory() {
 function getHint() {
     let text = "<div class='measure_result'>";
 
-    if(generatedNumber.length === 1 || generatedNumber === 10) {
+    if(generatedNumber.toString().length === 1 || generatedNumber === 10) {
         text += 'Your guess should be between 1 and 10';
-    } else if(generatedNumber.length === 3) {
+    } else if(generatedNumber.toString().length === 3) {
         text += 'Your guess should be between 91 and 100';
     }else {
         text += `Your guess should be between ${generatedNumber.toString()[0]}1 and ${Number(generatedNumber.toString()[0]) + 1}0`;
@@ -103,10 +103,8 @@ function resetGame() {
     document.getElementById('number_guess').value = ''; 
 };
 
-
 window.onload = () => {
     generateRandomNumber(); 
-     
 };
 
 document.getElementById('submit_btn').addEventListener('click', playGame);
