@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: rgba(165, 167, 136, 0.596);
+    padding: 10px;
+    color: rgb(255, 249, 242);
+}
+
+.main_content {
+    margin-top: 40px;
+}
+
+#number_guess {
+    margin-top: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.measure_result {
+    text-align: center;
+    border: 1px solid rgb(18, 18, 19, 0.5);
+    background-color: rgb(216, 192, 162);
+    padding: 5px;
+    border-radius: 4px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Oswald', sans-serif;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.guess_history {
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: 'Raleway', sans-serif;
+    max-height: 390px;
+    overflow-y: overlay;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.guess_history li {
+    background-color: navajowhite;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    margin-bottom: 4px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;  
+};
+

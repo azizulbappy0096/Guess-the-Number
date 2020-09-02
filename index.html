@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Number Guess </title>
+    <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+       <h1 class="header"> Guess The Number </h1>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 main_content">
+                    <h2 class="text-center"> 1.2.3. </h2>
+
+                    <div id="numberGuess">
+                        <input id="number_guess" type="number" class="form-control"  placeholder="Guess your number?" value="" min="0" max="100" step="1">
+                    </div>
+
+                    <div id="measure_result">
+                        
+                    </div>
+
+                    <div class="buttons text-center">
+                        <button id="submit_btn" type="button" class="btn btn-secondary"> Check me </button>
+                        <button id="reset_btn" type="button" class="btn btn-primary"> Restart </button>
+                        <button id="hint_btn" type="button" class="btn btn-primary d-none"> Hint </button>
+                    </div>
+
+                    <div id="guess_history">
+
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+    </main>
+
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
