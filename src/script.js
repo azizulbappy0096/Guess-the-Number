@@ -1,6 +1,7 @@
 let generatedNumber;
 let input;
 let guessedNum = [];
+let count = 1;
 
 const generateRandomNumber = () => {
     generatedNumber = Math.floor(Math.random() * 101);  
@@ -90,10 +91,11 @@ const playGame = () => {
         getHistory();
     };
     measureResult(generatedNumber, input);
-    if(guessedNum.length > 2) {
+    if(count > 2) {
         classToggle();
     };
-    document.getElementById('number_guess').value = '';  
+    document.getElementById('number_guess').value = '';
+    count++;  
 };
 
 function resetGame() {
