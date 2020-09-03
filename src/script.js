@@ -103,7 +103,8 @@ function resetGame() {
     guessedNum = [];
     document.getElementById('guess_history').innerHTML = null;
     document.getElementById('measure_result').innerHTML = null;
-    document.getElementById('number_guess').value = ''; 
+    document.getElementById('number_guess').value = '';
+    count = 1; 
 };
 
 window.onload = () => {
