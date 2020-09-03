@@ -1,7 +1,7 @@
 let generatedNumber;
 let input;
 let guessedNum = [];
-let count = 1;
+let count = 0;
 
 const generateRandomNumber = () => {
     generatedNumber = Math.floor(Math.random() * 101);  
@@ -85,26 +85,27 @@ function classToggle() {
     hint.forEach(hint => hint.classList.toggle('d-inline'));
 };
 
+
 const playGame = () => {
+    count += 1; 
     getInput();
     if(input <= 100 && input > 0) {
         getHistory();
     };
     measureResult(generatedNumber, input);
-    if(count > 2) {
+    if(guessedNum.length > 2) {
         classToggle();
     };
-    document.getElementById('number_guess').value = '';
-    count++;  
+    document.getElementById('number_guess').value = '';   
 };
 
 function resetGame() {
+    count = 0;
     generateRandomNumber();
     guessedNum = [];
     document.getElementById('guess_history').innerHTML = null;
     document.getElementById('measure_result').innerHTML = null;
     document.getElementById('number_guess').value = '';
-    count = 1; 
 };
 
 window.onload = () => {
